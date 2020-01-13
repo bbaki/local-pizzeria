@@ -1,4 +1,12 @@
+/*
+    W kilku miejscach się spacje niezgadzają
+*/
+
  document.addEventListener("DOMContentLoaded", function() {
+ /*
+    Jak querySelector to szukałbym po ID bo powinno być unikalne
+    querySelectorAll po klasie.
+ */
  // slider
  const slider = document.querySelector(".slider");
     const sliderStage = document.querySelector(".slider-stage");
@@ -17,7 +25,7 @@
         } else if (index > slidesNumber) {
             index = 0;
         }
-        
+
         slider.style.left = index * (-slideWidth) + "px";
         currentIndex = index;
         }
@@ -31,12 +39,12 @@
     }
 
     prev.addEventListener("click", slideToPrev);
-    next.addEventListener("click", slideToNext);       
+    next.addEventListener("click", slideToNext);
     setInterval(slideToNext, 4000);
 
     // read more-less
     const readMoreLessBtns = document.querySelectorAll(".read-more-less-btn");
-    
+
     function showHideText() {
         const siblingText = this.previousElementSibling;
 
@@ -49,6 +57,13 @@
         }
     }
 
+    /*
+        Ten for można zastąpić czymś takim:
+        readMoreLessBtns.forEach((item) => {
+            item.addEventListener("click", showHideText)
+        })
+        ale to drobnostka
+    */
     for (let i = 0; i < readMoreLessBtns.length; i++) {
         readMoreLessBtns[i].addEventListener("click", showHideText);
     }
