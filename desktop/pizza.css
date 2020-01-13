@@ -1,0 +1,200 @@
+html, 
+body{
+    background-image: url(photography-of-white-brick-wall-1022218.jpg);
+    margin: 0;
+    padding: 0;
+} 
+
+* {
+    font-family: "Open Sans", "Arial", sans-serif;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+/*Navigation*/
+
+header {
+    display: flex;
+    background-color: seashell;
+    text-transform: uppercase;
+    border: none;
+    padding-left: 450px;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: olive;
+}
+
+nav a:hover{
+    border-bottom: 3px solid darkred;
+}
+
+nav li{
+    padding-right: 40px;
+}
+
+.main-site a {
+    font-weight: 700;
+}
+
+/*Main image*/
+
+#main-img {
+    height: 300px;
+    background-image: url("pizza-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: seashell;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.main-text h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: seashell;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*Slider*/
+
+#slider-container {
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.previous-arrow,
+.next-arrow {
+    color: red;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.previous-arrow:hover,
+.next-arrow:hover {
+    color: #9ac051;
+}
+
+.slider-container i {
+    font-size: 55px;
+}
+
+.slider li img {
+    width: 600px;
+    border-radius: 5px;
+}
+
+.slider-stage {
+    width: 600px;
+    overflow-x: hidden;
+}
+
+.slider {
+    list-style: none;
+    width: 500px;
+    padding: 0;
+    display: flex;
+    position: relative;
+}
+
+
+/* Our offer*/
+
+#our-offer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Promotions */
+
+#promotions {
+    height: 500px;
+    background-image: url("promocja.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding-top: 150px;
+    color: darkred;
+}
+
+/* About us */
+
+#about-us {
+    color: darkred;
+    text-align: center;
+}
+
+#about-us p {
+    color: #444444;
+    font-size: 22px;
+}
+
+#about-us .read-more-less-btn {
+    background-color: darkred;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px 0;
+}
+
+
+/* Location */
+
+#location {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.location h1 {
+    color:darkred;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Go up*/
+
+.go-up {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.go-up i {
+    font-size: 55px;
+    color: red;
+    cursor: pointer;
+}
+
+.go-up i:hover {
+     color: #9ac051;
+}
+
